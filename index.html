@@ -1,72 +1,116 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Portofolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-<head>
-    <title>Pemograman Web</title>
-    <link rel=stylesheet href="../../css/file.css" type="text/css">
-    <style type="text/css">
-        .bale {
-            font-family: arial;
-            font-size: 30px;
-            color: blue;
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #ddd;
+        padding: 10px;
+      }
+
+      nav a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 10px;
+        padding: 5px;
+      }
+
+      nav a:hover {
+        background-color: #333;
+        color: white;
+      }
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px auto;
+        max-width: 900px;
+      }
+
+      article {
+        margin: 10px;
+        width: calc(33.33% - 20px);
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #ddd;
+      }
+
+      article img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+      }
+
+      article h2 {
+        margin: 10px;
+        font-size: 20px;
+      }
+
+      article p {
+        margin: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      @media only screen and (max-width: 600px) {
+        article {
+          width: calc(50% - 20px);
         }
-
-        /* .hd, .sb, .if { 
-            font-family: arial; 
-            color: rgb(164, 10, 247);
-            background: cyan;
-            font-weight: bold;}
-            .hd{font-size: 14pt;}
-            .sb{font-size: 12pt;}
-            .if{font-size: 10pt;} */
-
-        #layer1 {
-            left: 50;
-            top: 100;
-            z-index: 30;
-        }
-
-        #layer2 {
-            left: 10;
-            top: 100;
-            z-index: 30;
-        }
+      }
     </style>
-</head>
-
-<body>
-    <div>
-        <b class="bale">Tulisan ini tebal karena menggunakan style</b><br>
-        <b class="bale"><i class="bale">Tulisan ini tebal & miring karena menggunakan style</i></b><br>
-        ini adalah contoh <b style="font-size: 26px; color: blueviolet;">bold</b> dengan menggunakan CSS<br>
-        <div id="layer1">
-            <table border="4" bgcolor="cyan" style="margin: 10px;">
-                <tr>
-                    <td>Ini adalah layer 1 <br> Diletakan pada posisi(100)(75)</td>
-                </tr>
-            </table>
-        </div>
-        <div id="layer2">
-            <table border="4" bgcolor="yellow" style="margin: 10px;">
-                <tr>
-                    <td>Ini adalah layer 2 <br> Diletakan pada posisi(150)(120)</td>
-                </tr>
-            </table><br>
-        </div>
-        <span class="hd">Selamat Datang</span><br>
-        <div class="sb">Ini adalah contoh penggunaan web yang menggunakan CSS<br>
-                        Contoh ini menggunakan CSS untuk satu halaman Web<br>
-                        Pendefinisian style cukup dilakukan ditag head<br>
-        </div>
-        <br>
-        <table border="2">
-            <tr>
-                <td class="sb">Style juga dapat dilakukan dalam elemen table</td>
-            </tr>    
-        </table>
-        <br>
-        <hr>
-        <div class="if">Contoh penggunaan CSS untuk satu halaman</div>
-</body>
-
-
-</html>
+  </head>
+  <body>
+    <header>
+      <h1>Portofolio</h1>
+    </header>
+    <nav>
+      <a href="#">Profil</a>
+      <a href="#">Pengalaman</a>
+      <a href="#">Pendidikan</a>
+      <a href="#">Kontak</a>
+    </nav>
+    <section>
+      <article>
+        <img src="L.jpg" alt="Project 1" />
+        <h2>Project 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ipsum quis enim euismod laoreet.</p>
+      </article>
+      <article>
+        <img src="L.jpg" alt="Project 2" />
+        <h2>Project 2</h2>
+        <p>Phasellus vitae enim ac mauris mollis convallis. Proin consectetur, turpis eget pharetra ullamcorper.</p>
+      </article>
+      <article>
+        <img src="L.jpg" alt="Project 3" />
+        <h2>Project 3</h2>
+        <p>Nam a augue in mi ullamcorper auctor. Etiam finibus magna sed leo ornare, id ultrices velit pulvinar.</p>
+      </article>
+      <article>
+        <img src="L.jpg" alt="Project 4" />
+        <h2>Project 4</h2>
+        <p>Integer
